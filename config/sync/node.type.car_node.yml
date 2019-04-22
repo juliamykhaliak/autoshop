@@ -1,0 +1,18 @@
+uuid: 0bcef0cd-15cd-45d7-8a0b-8495cc03c845
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Car node'
+type: car_node
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

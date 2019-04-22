@@ -1,0 +1,30 @@
+uuid: 7dfa9678-90b8-4a70-9d6f-b295ebebe5f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_description.field_description
+    - field.field.paragraph.title_description.field_title
+    - paragraphs.paragraphs_type.title_description
+  module:
+    - text
+id: paragraph.title_description.default
+targetEntityType: paragraph
+bundle: title_description
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

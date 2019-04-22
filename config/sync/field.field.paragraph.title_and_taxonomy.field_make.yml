@@ -1,0 +1,29 @@
+uuid: ae0b8874-a781-4daf-b449-8932b43b6a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_make
+    - paragraphs.paragraphs_type.title_and_taxonomy
+    - taxonomy.vocabulary.make
+id: paragraph.title_and_taxonomy.field_make
+field_name: field_make
+entity_type: paragraph
+bundle: title_and_taxonomy
+label: Make
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      make: make
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

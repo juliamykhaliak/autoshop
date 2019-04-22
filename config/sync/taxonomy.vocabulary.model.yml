@@ -1,0 +1,9 @@
+uuid: b57d242d-3003-4ccc-adc8-39cdf845b5fd
+langcode: en
+status: true
+dependencies: {  }
+name: Model
+vid: model
+description: ''
+hierarchy: 0
+weight: 0

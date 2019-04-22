@@ -1,0 +1,23 @@
+uuid: ed8fbb1a-05ea-4af7-a740-114fd676eddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_milleage
+    - paragraphs.paragraphs_type.title_and_taxonomy
+id: paragraph.title_and_taxonomy.field_milleage
+field_name: field_milleage
+entity_type: paragraph
+bundle: title_and_taxonomy
+label: Milleage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ml
+field_type: float

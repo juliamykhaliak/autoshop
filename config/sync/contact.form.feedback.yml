@@ -1,0 +1,14 @@
+uuid: 674d1548-d827-470d-80a9-6e872cbf853b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - yulya.mhl@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

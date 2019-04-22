@@ -1,0 +1,20 @@
+uuid: 9423bcf0-151a-4ed8-a39b-af2178999593
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - webform
+id: node.field_buy_or_reserve
+field_name: field_buy_or_reserve
+entity_type: node
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,91 @@
+uuid: f7f8682f-abb9-4a6f-b865-5d8af1767064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_and_taxonomy.field_body
+    - field.field.paragraph.title_and_taxonomy.field_dri
+    - field.field.paragraph.title_and_taxonomy.field_fu
+    - field.field.paragraph.title_and_taxonomy.field_make
+    - field.field.paragraph.title_and_taxonomy.field_milleage
+    - field.field.paragraph.title_and_taxonomy.field_model
+    - field.field.paragraph.title_and_taxonomy.field_price
+    - field.field.paragraph.title_and_taxonomy.field_year
+    - paragraphs.paragraphs_type.title_and_taxonomy
+id: paragraph.title_and_taxonomy.default
+targetEntityType: paragraph
+bundle: title_and_taxonomy
+mode: default
+content:
+  field_body:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dri:
+    weight: 7
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fu:
+    weight: 6
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_make:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_milleage:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_model:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_price:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_year:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

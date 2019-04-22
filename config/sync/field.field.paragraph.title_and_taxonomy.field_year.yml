@@ -1,0 +1,23 @@
+uuid: 085440ff-0918-4d51-b3ad-bbcbb8b981cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.title_and_taxonomy
+id: paragraph.title_and_taxonomy.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: title_and_taxonomy
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

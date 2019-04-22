@@ -1,0 +1,32 @@
+uuid: 0e84ef37-a711-4e42-816c-a2eac9bf628d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_buy_or_reserve
+    - node.type.car_node
+    - webform.webform.name_email_phone
+  module:
+    - webform
+id: node.car_node.field_buy_or_reserve
+field_name: field_buy_or_reserve
+entity_type: node
+bundle: car_node
+label: 'Buy or reserve'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 14faa2ea-b8d7-421e-ab21-98ebc0ae0b6e
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -1,0 +1,31 @@
+uuid: cff83fb8-8f1a-44fd-840d-a53f0965aa16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_info
+    - node.type.car_node
+    - paragraphs.paragraphs_type.title_description
+  module:
+    - entity_reference_revisions
+id: node.car_node.field_additional_info
+field_name: field_additional_info
+entity_type: node
+bundle: car_node
+label: 'Additional info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      title_description: title_description
+    target_bundles_drag_drop:
+      title_description:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

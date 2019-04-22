@@ -1,0 +1,78 @@
+uuid: 3c3f5173-73e2-4660-94db-2c794375cccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car_node.body
+    - field.field.node.car_node.field_additional_info
+    - field.field.node.car_node.field_buy_or_reserve
+    - field.field.node.car_node.field_deta
+    - field.field.node.car_node.field_photo
+    - field.field.node.car_node.field_title
+    - node.type.car_node
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+    - webform
+id: node.car_node.default
+targetEntityType: node
+bundle: car_node
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_additional_info:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_buy_or_reserve:
+    weight: 106
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_deta:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

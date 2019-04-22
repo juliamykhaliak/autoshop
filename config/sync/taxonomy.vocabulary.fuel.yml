@@ -1,0 +1,9 @@
+uuid: c6f90438-1848-47f6-865f-294d4cdc8cad
+langcode: en
+status: true
+dependencies: {  }
+name: Fuel
+vid: fuel
+description: ''
+hierarchy: 0
+weight: 0

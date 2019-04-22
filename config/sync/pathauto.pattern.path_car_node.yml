@@ -1,0 +1,22 @@
+uuid: cb8899ee-b13e-496d-bec1-cdc12893832b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: path_car_node
+label: path-car-node
+type: 'canonical_entities:node'
+pattern: 'cars/[node:title]'
+selection_criteria:
+  917bcb1f-cfe1-417e-8e40-87e0a278de08:
+    id: node_type
+    bundles:
+      car_node: car_node
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 917bcb1f-cfe1-417e-8e40-87e0a278de08
+selection_logic: and
+weight: -5
+relationships: {  }

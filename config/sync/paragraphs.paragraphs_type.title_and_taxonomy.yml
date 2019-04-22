@@ -1,0 +1,9 @@
+uuid: fd324e78-a9b4-4919-ac29-4dc571d70dd1
+langcode: en
+status: true
+dependencies: {  }
+id: title_and_taxonomy
+label: 'Title and taxonomy'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

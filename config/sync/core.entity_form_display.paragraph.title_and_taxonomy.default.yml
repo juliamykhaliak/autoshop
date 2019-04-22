@@ -1,0 +1,88 @@
+uuid: 5e1c27b3-688d-4f50-a913-ecd64cf17422
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_and_taxonomy.field_body
+    - field.field.paragraph.title_and_taxonomy.field_dri
+    - field.field.paragraph.title_and_taxonomy.field_fu
+    - field.field.paragraph.title_and_taxonomy.field_make
+    - field.field.paragraph.title_and_taxonomy.field_milleage
+    - field.field.paragraph.title_and_taxonomy.field_model
+    - field.field.paragraph.title_and_taxonomy.field_price
+    - field.field.paragraph.title_and_taxonomy.field_year
+    - paragraphs.paragraphs_type.title_and_taxonomy
+id: paragraph.title_and_taxonomy.default
+targetEntityType: paragraph
+bundle: title_and_taxonomy
+mode: default
+content:
+  field_body:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_dri:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_fu:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_make:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_milleage:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_model:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_price:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_year:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
