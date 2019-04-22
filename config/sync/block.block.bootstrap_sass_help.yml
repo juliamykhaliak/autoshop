@@ -11,7 +11,7 @@ _core:
 id: bootstrap_sass_help
 theme: bootstrap_sass
 region: content
-weight: -30
+weight: -5
 provider: null
 plugin: help_block
 settings:

@@ -1,0 +1,10 @@
+uuid: d442a513-1f78-49d7-a24c-76bc40d98dc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hide_label_in_car_node_vi
+label: 'Hide label in car node view'
+targetEntityType: node
+cache: true

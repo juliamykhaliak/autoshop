@@ -1,0 +1,4 @@
+name: filter_placeholder_select_alter
+type: module
+description: Changes default value of select filter from <-Any->
+core: 8.x

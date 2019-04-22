@@ -1,0 +1,16 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function filter_placeholder_select_alter_form_alter(&$form, FormStateInterface $form_state, &$form_id) {
+    switch ($form_id) {
+    case 'views_exposed_form':
+      $form['field_make_target_id']['#options']['All'] = t('Make');
+      $form['field_model_target_id']['#options']['All'] = t('Model');
+      $form['field_body_target_id']['#options']['All'] = t('Body');
+      break;
+  }
+}

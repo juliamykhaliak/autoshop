@@ -1,0 +1,40 @@
+uuid: d8c88e19-e068-4bec-a6ca-af4e01808051
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.field.block_content.map.body
+    - field.field.block_content.map.field_map
+  module:
+    - google_map_field
+    - text
+id: block_content.map.default
+targetEntityType: block_content
+bundle: map
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_map:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

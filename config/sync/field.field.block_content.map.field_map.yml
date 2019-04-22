@@ -1,0 +1,21 @@
+uuid: 2ceed575-2279-4278-ad5d-62c77e26e321
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_map
+  module:
+    - google_map_field
+id: block_content.map.field_map
+field_name: field_map
+entity_type: block_content
+bundle: map
+label: Map
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

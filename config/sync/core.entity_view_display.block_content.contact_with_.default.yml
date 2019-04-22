@@ -1,0 +1,32 @@
+uuid: ff3b6583-494d-4ed2-8f98-aa72499cf87f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_with_
+    - field.field.block_content.contact_with_.body
+    - field.field.block_content.contact_with_.field_contact_us
+  module:
+    - text
+    - webform
+id: block_content.contact_with_.default
+targetEntityType: block_content
+bundle: contact_with_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contact_us:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden: {  }

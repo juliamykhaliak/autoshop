@@ -1,0 +1,20 @@
+uuid: 12a300e5-0541-4724-aa32-cca53429ac5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - webform
+id: block_content.field_contact_us
+field_name: field_contact_us
+entity_type: block_content
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

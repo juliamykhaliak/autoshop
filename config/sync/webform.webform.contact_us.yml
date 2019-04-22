@@ -1,4 +1,4 @@
-uuid: 14faa2ea-b8d7-421e-ab21-98ebc0ae0b6e
+uuid: bb1802e5-89ff-47bc-9d2f-5266365817a0
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: name_email_phone
-title: Name-email-phone
+id: contact_us
+title: 'Contact us'
 description: ''
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#placeholder': Name\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\nphone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#title_display': invisible\n  '#placeholder': 'Phone Number'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'SEND REQUEST'\n  '#submit__attributes':\n    class:\n      - submit-buy-button"
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#placeholder': Name\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\nphone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#title_display': invisible\n  '#placeholder': 'Phone Number'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'SEND REQUEST'\n  '#submit__attributes':\n    class:\n      - submit-contact-button"
 css: ''
 javascript: ''
 settings:
@@ -21,7 +21,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -166,38 +166,4 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email:
-    id: email
-    label: Email
-    handler_id: email
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      states:
-        - completed
-      to_mail: '[webform:author:mail]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: _default
-      body: _default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      html: true
-      attachments: false
-      twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      theme_name: ''
+handlers: {  }

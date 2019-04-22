@@ -1,0 +1,28 @@
+uuid: e13e1c65-fc8f-4f30-b18e-cc5e08e28517
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.contact
+  module:
+    - panels
+id: contact-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: ed23a1d7-b4d9-4e4e-8da5-15298fcf631f
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: contact-panels_variant-0
+  builder: standard
+page: contact
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

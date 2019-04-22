@@ -1,0 +1,22 @@
+uuid: c89be1b1-b26d-435a-bf30-3eed5c586dbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_with_
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.contact_with_.body
+field_name: body
+entity_type: block_content
+bundle: contact_with_
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

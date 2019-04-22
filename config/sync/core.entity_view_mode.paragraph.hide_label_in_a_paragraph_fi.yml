@@ -1,0 +1,10 @@
+uuid: deab02ea-acc5-4446-b292-300bbf08e395
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.hide_label_in_a_paragraph_fi
+label: 'Hide label in a paragraph fields'
+targetEntityType: paragraph
+cache: true

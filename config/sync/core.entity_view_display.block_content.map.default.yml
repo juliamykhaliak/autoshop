@@ -1,0 +1,31 @@
+uuid: 73dc5178-277b-40b8-b440-5e4b96430dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.field.block_content.map.body
+    - field.field.block_content.map.field_map
+  module:
+    - google_map_field
+    - text
+id: block_content.map.default
+targetEntityType: block_content
+bundle: map
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_map:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+    region: content
+hidden: {  }
