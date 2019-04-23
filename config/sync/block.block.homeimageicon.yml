@@ -1,0 +1,25 @@
+uuid: b99ed68f-6d2a-4c51-8f3a-6d4d3d2041c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8600543f-3bf4-434b-b336-bf57e00bbb3f'
+  module:
+    - block_content
+  theme:
+    - bootstrap_sass
+id: homeimageicon
+theme: bootstrap_sass
+region: title_page_and_image
+weight: -11
+provider: null
+plugin: 'block_content:8600543f-3bf4-434b-b336-bf57e00bbb3f'
+settings:
+  id: 'block_content:8600543f-3bf4-434b-b336-bf57e00bbb3f'
+  label: 'Home image icon'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

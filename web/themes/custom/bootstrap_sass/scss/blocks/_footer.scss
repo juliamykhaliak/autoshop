@@ -1,0 +1,26 @@
+.footer {
+  background-color: $footer-background-color;
+  .region-footer {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include container();
+    .menu--footer-menu {
+      display: flex;
+      a {
+        color: rgb(255, 255, 255);
+        &:hover {
+          background-color: unset;
+        }
+        &:active {
+          color: $price-button-hover-links-orange;
+          background-color: unset;
+        }
+      }
+    }
+    #block-copyrightblock {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

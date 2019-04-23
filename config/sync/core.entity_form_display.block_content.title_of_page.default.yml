@@ -1,0 +1,40 @@
+uuid: d629cd28-fb74-4479-95e6-8e0bbbcb6baa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.title_of_page
+    - field.field.block_content.title_of_page.body
+    - field.field.block_content.title_of_page.field_home_icon
+  module:
+    - fontawesome
+    - text
+id: block_content.title_of_page.default
+targetEntityType: block_content
+bundle: title_of_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_home_icon:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

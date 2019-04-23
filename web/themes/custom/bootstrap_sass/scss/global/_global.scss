@@ -1,0 +1,25 @@
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.clearfix:before,
+.filter-wrapper:before,
+.clearfix:after,
+.filter-wrapper:after {
+  content: none;
+}
+.row {
+  margin: 0;
+}
+.navbar {
+  min-height: unset;
+  border: none;
+}
+.col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}

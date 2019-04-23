@@ -1,11 +1,11 @@
 uuid: 77415766-dac1-4d90-a810-973d220aecc0
-name: Autoshop
+name: 'AUTO SHOP'
 mail: yulya.mhl@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

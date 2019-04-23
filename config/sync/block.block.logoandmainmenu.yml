@@ -1,0 +1,22 @@
+uuid: a8a8f799-f78b-4bbd-922b-4b138ed9ba7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.logo_and_main_menu
+  module:
+    - blockgroup
+  theme:
+    - bootstrap_sass
+id: logoandmainmenu
+theme: bootstrap_sass
+region: header
+weight: 0
+provider: null
+plugin: 'block_group:d3b6a364-8939-4901-aca3-fb046b28094c'
+settings:
+  id: 'block_group:d3b6a364-8939-4901-aca3-fb046b28094c'
+  label: 'logo and main menu'
+  provider: blockgroup
+  label_display: '0'
+visibility: {  }

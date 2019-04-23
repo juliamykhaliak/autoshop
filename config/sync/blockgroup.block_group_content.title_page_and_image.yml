@@ -1,0 +1,6 @@
+uuid: dcce4b2d-cffa-4640-9333-998353db911f
+langcode: en
+status: true
+dependencies: {  }
+id: title_page_and_image
+label: 'Title-page and image'

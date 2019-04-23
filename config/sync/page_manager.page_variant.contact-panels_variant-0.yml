@@ -17,7 +17,7 @@ variant_settings:
   weight: 0
   layout: layout_onecol
   layout_settings: {  }
-  page_title: ''
+  page_title: Contact
   storage_type: page_manager
   storage_id: contact-panels_variant-0
   builder: standard

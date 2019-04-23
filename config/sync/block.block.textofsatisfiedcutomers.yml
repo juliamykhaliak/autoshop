@@ -1,0 +1,25 @@
+uuid: ff9311f5-70a5-40b6-aa01-e06ba1e4b55a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51946adc-23d1-42b3-bb7a-1967b3f1d3af'
+  module:
+    - block_content
+  theme:
+    - bootstrap_sass
+id: textofsatisfiedcutomers
+theme: bootstrap_sass
+region: subheader
+weight: -11
+provider: null
+plugin: 'block_content:51946adc-23d1-42b3-bb7a-1967b3f1d3af'
+settings:
+  id: 'block_content:51946adc-23d1-42b3-bb7a-1967b3f1d3af'
+  label: 'text of satisfied cutomers'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,6 +1,6 @@
 uuid: 67090dd1-d7ee-4be5-abdd-731f11bdf2f0
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: bootstrap_sass_breadcrumbs
 theme: bootstrap_sass
 region: navigation
-weight: 0
+weight: -11
 provider: null
 plugin: system_breadcrumb_block
 settings:

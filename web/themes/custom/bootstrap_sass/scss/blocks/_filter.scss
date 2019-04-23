@@ -1,0 +1,15 @@
+#views-exposed-form-cars-page-1 {
+  .form-inline {
+    @include container();
+  }
+  background-color: $footer-background-color;
+  #edit-field-make-target-id,
+  #edit-field-model-target-id,
+  #edit-field-price-value,
+  #edit-field-milleage-value,
+  #edit-field-year-value,
+  #edit-field-body-target-id {
+    width: 120px;
+    margin-right: 15px;
+  }
+}

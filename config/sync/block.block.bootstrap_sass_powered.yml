@@ -1,6 +1,6 @@
 uuid: 3d299856-2b31-4534-9907-7f0518a5cbbd
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: bootstrap_sass_powered
 theme: bootstrap_sass
 region: navigation
-weight: 10
+weight: -9
 provider: null
 plugin: system_powered_by_block
 settings:

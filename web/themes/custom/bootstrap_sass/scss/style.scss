@@ -6,3 +6,18 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+// Variables.
+@import 'global/variables';
+@import 'global/global';
+@import 'global/mixins';
+
+// Blocks.
+@import 'blocks/subheader';
+@import 'blocks/logo-main-menu';
+@import 'blocks/footer';
+@import 'blocks/title-page-image';
+@import 'blocks/filter';
+
+// Regions.
+@import 'regions/navbar';

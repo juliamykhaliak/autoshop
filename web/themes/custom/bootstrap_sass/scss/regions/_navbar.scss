@@ -1,0 +1,14 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  .region-navigation {
+    @include container();
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-header {
+    background-color: $subheader;
+  }
+}
+

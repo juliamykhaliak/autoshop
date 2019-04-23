@@ -1,0 +1,10 @@
+#block-logoandmainmenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  @include container();
+  .menu--main a,
+  .menu--account a {
+    color: $main-menu-text-color;
+  }
+}

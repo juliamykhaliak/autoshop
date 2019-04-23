@@ -1,0 +1,22 @@
+uuid: 7cf28c29-ce05-4891-ac9d-9fb369329613
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.title_page_and_image
+  module:
+    - blockgroup
+  theme:
+    - bootstrap_sass
+id: titlepageandimage
+theme: bootstrap_sass
+region: wrapper_title_page_image
+weight: -13
+provider: null
+plugin: 'block_group:dcce4b2d-cffa-4640-9333-998353db911f'
+settings:
+  id: 'block_group:dcce4b2d-cffa-4640-9333-998353db911f'
+  label: 'Title-page and image'
+  provider: blockgroup
+  label_display: '0'
+visibility: {  }

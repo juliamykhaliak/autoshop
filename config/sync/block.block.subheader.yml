@@ -1,0 +1,22 @@
+uuid: 0fcd2a0e-d91d-4540-abf2-392e0afde724
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.subheader
+  module:
+    - blockgroup
+  theme:
+    - bootstrap_sass
+id: subheader
+theme: bootstrap_sass
+region: navigation
+weight: -12
+provider: null
+plugin: 'block_group:f69697f8-8b4c-431d-bc1d-a7893171dccd'
+settings:
+  id: 'block_group:f69697f8-8b4c-431d-bc1d-a7893171dccd'
+  label: Subheader
+  provider: blockgroup
+  label_display: '0'
+visibility: {  }

@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: bootstrap_sass_main_menu
 theme: bootstrap_sass
-region: navigation
-weight: 0
+region: logo_and_main_menu
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -8,13 +8,13 @@ _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: bootstrap_sass_page_title
 theme: bootstrap_sass
-region: content
-weight: -7
+region: title_page_and_image
+weight: -12
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
   provider: core
-  label_display: '0'
+  label_display: visible
 visibility: {  }

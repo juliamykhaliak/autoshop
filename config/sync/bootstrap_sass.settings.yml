@@ -2,10 +2,10 @@ cdn_provider: ''
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: 'public://car (2).png'
   url: 'http://autoshop.loc/themes/custom/bootstrap_sass/favicon.ico'
-  use_default: 1
+  use_default: 0
 schemas:
   bootstrap: 8000
   bootstrap_sass: 8000
@@ -15,9 +15,21 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: ''
+  path: 'public://Selection_009.png'
   url: ''
-  use_default: 1
+  use_default: 0
 fluid_container: 1
 table_responsive: '-1'
 table: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+  logo_and_main_menu: ''
+  subheader: ''

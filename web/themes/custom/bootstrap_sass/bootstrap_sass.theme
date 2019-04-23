@@ -7,3 +7,7 @@
  * Place your custom PHP code in this file.
  */
 
+function bootstrap_sass_theme_suggestions_fontawesomeicon_alter(array &$suggestions, array $variables) {
+    $suggestions[] = 'font_awesome';
+}
+

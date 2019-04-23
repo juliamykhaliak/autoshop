@@ -1,0 +1,32 @@
+uuid: 8feed243-8dcd-4fa6-995f-54f2d36ea60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.title_of_page
+    - field.field.block_content.title_of_page.body
+    - field.field.block_content.title_of_page.field_home_icon
+  module:
+    - fontawesome
+    - text
+id: block_content.title_of_page.default
+targetEntityType: block_content
+bundle: title_of_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_home_icon:
+    weight: 1
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+hidden: {  }

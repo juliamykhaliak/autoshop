@@ -1,0 +1,32 @@
+uuid: e04f9a5f-b96f-40e6-b445-ab1f71148799
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_and_icons
+    - field.field.block_content.text_and_icons.body
+    - field.field.block_content.text_and_icons.field_icons
+  module:
+    - fontawesome
+    - text
+id: block_content.text_and_icons.default
+targetEntityType: block_content
+bundle: text_and_icons
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_icons:
+    weight: 0
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 10f9fe49-b20c-4189-9d1e-2af796e48192
+langcode: en
+status: true
+dependencies: {  }
+id: text_and_icons
+label: 'text and icons'
+revision: 0
+description: ''

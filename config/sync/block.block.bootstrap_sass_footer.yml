@@ -1,6 +1,6 @@
 uuid: 92c44047-4f58-4753-860f-7d3df08e6ed2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: bootstrap_sass_footer
 theme: bootstrap_sass
 region: navigation
-weight: 0
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

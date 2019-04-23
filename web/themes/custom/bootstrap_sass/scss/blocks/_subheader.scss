@@ -1,0 +1,19 @@
+#block-phonesocialnavigation {
+  display: flex;
+  .fontawesome-icons {
+    display: flex;
+  }
+  .fontawesome-icon {
+    margin: 0 10px;
+  }
+}
+#block-subheader {
+  display: flex;
+  justify-content: space-between;
+  color: $text-subheader;
+  padding: 20px 0;
+  .fontawesome-icon a {
+    color: $text-subheader;
+    text-decoration: none;
+  }
+}

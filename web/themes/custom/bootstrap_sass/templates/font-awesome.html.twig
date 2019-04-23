@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default implementation for Font Awesome Icon field.
+ *
+ * Available variables:
+ * - tag: the HTML tag being used to create the icon.
+ * - icon: the name of the icon being used for templating.
+ * - style: the Font Awesome style for the icon.
+ * - settings: the additional Font Awesome style settings.
+ * - transforms: Font Awesome power transforms.
+ * - mask: Font Awesome mask.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="fontawesome-icon">
+  {% if name =='fa-google-plus-g' %}
+  <a href="https://support.google.com/plus#topic=9259565">
+    <{{tag }} class="{{ style }} {{ name }} {{ settings }}" data-fa-transform="{{ transforms }}" data-fa-mask="{{ mask }}"></{{ tag }}>
+  </a>
+  {% endif %}
+  {% if name =='fa-facebook-f' %}
+    <a href="https://facebook.com">
+    <{{tag }} class="{{ style }} {{ name }} {{ settings }}" data-fa-transform="{{ transforms }}" data-fa-mask="{{ mask }}"></{{ tag }}>
+    </a>
+  {% endif %}
+  {% if name =='fa-twitter' %}
+    <a href="https://twitter.com/?lang=en">
+    <{{tag }} class="{{ style }} {{ name }} {{ settings }}" data-fa-transform="{{ transforms }}" data-fa-mask="{{ mask }}"></{{ tag }}>
+    </a>
+  {% endif %}
+  {% if name =='fa-vimeo-v' %}
+    <a href="https://vimeo.com/‎">
+    <{{tag }} class="{{ style }} {{ name }} {{ settings }}" data-fa-transform="{{ transforms }}" data-fa-mask="{{ mask }}"></{{ tag }}>
+    </a>
+  {% endif %}
+  {% if name =='fa-phone' %}
+    <{{tag }} class="{{ style }} {{ name }} {{ settings }}" data-fa-transform="{{ transforms }}" data-fa-mask="{{ mask }}"></{{ tag }}>
+  {% endif %}
+</div>

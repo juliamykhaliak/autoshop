@@ -23,13 +23,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_additional_info:
     type: entity_reference_revisions_entity_view
-    weight: 104
+    weight: 4
     label: above
     settings:
       view_mode: default
@@ -37,7 +37,7 @@ content:
     third_party_settings: {  }
     region: content
   field_buy_or_reserve:
-    weight: 106
+    weight: 6
     label: above
     settings:
       source_entity: true
@@ -46,7 +46,7 @@ content:
     region: content
   field_deta:
     type: entity_reference_revisions_entity_view
-    weight: 105
+    weight: 5
     label: above
     settings:
       view_mode: default
@@ -55,7 +55,7 @@ content:
     region: content
   field_photo:
     type: entity_reference_entity_view
-    weight: 103
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -63,7 +63,7 @@ content:
     third_party_settings: {  }
     region: content
   field_title:
-    weight: 102
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -71,7 +71,7 @@ content:
     type: string
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,25 @@
+uuid: 4825e78f-d5d5-48be-8e3d-862d65673521
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_and_icons:135ec139-3e66-4f2b-b631-97109f27b91f'
+  module:
+    - block_content
+  theme:
+    - bootstrap_sass
+id: phonesocialnavigation
+theme: bootstrap_sass
+region: subheader
+weight: -10
+provider: null
+plugin: 'block_content:135ec139-3e66-4f2b-b631-97109f27b91f'
+settings:
+  id: 'block_content:135ec139-3e66-4f2b-b631-97109f27b91f'
+  label: 'Phone, Social navigation'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

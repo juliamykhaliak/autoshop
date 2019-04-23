@@ -1,0 +1,25 @@
+uuid: 967e8cf8-9aa3-42d6-be0a-adc401f33495
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71f97376-83bd-4472-ba17-6d11750c7486'
+  module:
+    - block_content
+  theme:
+    - bootstrap_sass
+id: copyrightblock
+theme: bootstrap_sass
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:71f97376-83bd-4472-ba17-6d11750c7486'
+settings:
+  id: 'block_content:71f97376-83bd-4472-ba17-6d11750c7486'
+  label: 'Copyright block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
