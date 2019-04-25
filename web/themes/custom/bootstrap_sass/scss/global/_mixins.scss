@@ -3,3 +3,17 @@
   margin: 0 auto;
   max-width: 100%;
 }
+@mixin icons-blog-items() {
+  width: 30px;
+  background-position: 0 1px;
+  background-repeat: no-repeat;
+}
+@mixin car-node-page-title() {
+  background-color: $footer-background-color;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-weight: unset;
+  text-transform: uppercase;
+  padding: 13px 23px;
+}

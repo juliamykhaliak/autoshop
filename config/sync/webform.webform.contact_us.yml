@@ -12,7 +12,7 @@ id: contact_us
 title: 'Contact us'
 description: ''
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#placeholder': Name\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\nphone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#title_display': invisible\n  '#placeholder': 'Phone Number'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'SEND REQUEST'\n  '#submit__attributes':\n    class:\n      - submit-contact-button"
+elements: "flexbox:\n  '#type': webform_flexbox\n  name:\n    '#type': textfield\n    '#title': Name\n    '#title_display': invisible\n    '#placeholder': Name\n  email:\n    '#type': email\n    '#title': Email\n    '#title_display': invisible\n    '#placeholder': Email\n  phone_number:\n    '#type': tel\n    '#title': 'Phone Number'\n    '#title_display': invisible\n    '#placeholder': 'Phone Number'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'SEND REQUEST'\n  '#submit__attributes':\n    class:\n      - submit-contact-button"
 css: ''
 javascript: ''
 settings:

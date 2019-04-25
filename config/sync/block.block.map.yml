@@ -12,7 +12,7 @@ dependencies:
 id: map
 theme: bootstrap_sass
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'block_content:512b8c18-0709-46c7-9629-7e3e270cdfd6'
 settings:

@@ -23,3 +23,8 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+.form-control {
+  border-radius: 0;
+  width: unset;
+  border: none;
+}

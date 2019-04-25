@@ -1,0 +1,28 @@
+uuid: 80977f06-d26c-4054-81eb-def61af493f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.wrapper_form_contact_
+  module:
+    - blockgroup
+    - system
+  theme:
+    - bootstrap_sass
+id: wrapperformcontactus
+theme: bootstrap_sass
+region: content
+weight: -6
+provider: null
+plugin: 'block_group:7f3ce16e-5a60-44c1-850a-ab915e4b96ad'
+settings:
+  id: 'block_group:7f3ce16e-5a60-44c1-850a-ab915e4b96ad'
+  label: 'Wrapper form contact us'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

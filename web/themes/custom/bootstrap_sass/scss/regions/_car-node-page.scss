@@ -1,0 +1,57 @@
+.wrapper-node-car {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  .car-node {
+    color: $font-color-car-node-page;
+    @include container();
+    .wrap-title-price-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price-of-car {
+        padding: 6px 42px;
+        font-size: 2.0rem;
+        font-weight: bold;
+        box-shadow: $border-price-field 0 0 1px 1px;
+        border-radius: 3px;
+      }
+      .wrapper-date-title {
+        display: flex;
+        flex-direction: column;
+        .node-title {
+          font-size: $car-page-number-of-cars-font-size;
+          margin-top: 5px;
+        }
+        .wrap-icon-date {
+          display: flex;
+          .calendar-icon {
+            margin-right: -10px;
+            @include icons-blog-items();
+            background-image: url("../images/calendar.png");
+            background-size: 11px 14px;
+          }
+        }
+      }
+    }
+    .content {
+      .info-details-form {
+        .field--name-field-deta > .field--label {
+          @include car-node-page-title;
+        }
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        .field--name-field-additional-info,
+        .field--name-field-deta,
+        .field--name-field-buy-or-reserve {
+          width: 32%;
+          box-shadow: $car-item-box-shadow 0 0 1px 1px;
+        }
+        .field--name-field-additional-info .field--label,
+        .field--name-field-buy-or-reserve .field--label {
+          @include car-node-page-title();
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ dependencies:
     - field.storage.paragraph.field_milleage
     - field.storage.paragraph.field_price
     - field.storage.paragraph.field_year
-    - image.style.large
+    - image.style.320x220
     - node.type.car_node
     - taxonomy.vocabulary.body
     - taxonomy.vocabulary.make
@@ -21,6 +21,7 @@ dependencies:
     - paragraphs
     - taxonomy
     - user
+    - views_fieldsets
 id: cars
 label: Cars
 module: views
@@ -201,7 +202,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: large
+            image_style: 320x220
             image_link: content
           group_column: target_id
           group_columns: {  }
@@ -290,7 +291,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: 'Ut enim ad minim veniam, quis nostrud exercitation.'
+            text: 'Ut enim ad minim veniam, quis exercitation.'
             make_link: false
             path: ''
             absolute: false
@@ -341,6 +342,65 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        fieldset:
+          id: fieldset
+          table: views
+          field: fieldset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          fields:
+            - field_year
+            - field_fu
+            - field_body
+            - field_milleage
+          wrapper: div
+          legend: ''
+          classes: price-fuel-milleage-wrapper
+          collapsible: 1
+          collapsed: 0
+          plugin_id: fieldset
         field_year:
           id: field_year
           table: paragraph__field_year
@@ -597,6 +657,63 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        fieldset_1:
+          id: fieldset_1
+          table: views
+          field: fieldset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          fields:
+            - field_price
+            - fieldset_2
+          wrapper: div
+          legend: ''
+          classes: price-wrapper
+          collapsible: 1
+          collapsed: 0
+          plugin_id: fieldset
         field_price:
           id: field_price
           table: paragraph__field_price
@@ -663,6 +780,61 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        fieldset_2:
+          id: fieldset_2
+          table: views
+          field: fieldset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          fields: {  }
+          wrapper: div
+          legend: ''
+          classes: arrow
+          collapsible: 1
+          collapsed: 0
+          plugin_id: fieldset
       filters:
         status:
           value: '1'
