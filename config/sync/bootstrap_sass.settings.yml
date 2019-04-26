@@ -3,8 +3,8 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/png
-  path: 'public://car (2).png'
-  url: 'http://autoshop.loc/themes/custom/bootstrap_sass/favicon.ico'
+  path: 'public://car (2)_0.png'
+  url: 'http://autoshop.loc/sites/default/files/car%20%282%29.png'
   use_default: 0
 schemas:
   bootstrap: 8000
@@ -33,3 +33,6 @@ region_wells:
   footer: ''
   logo_and_main_menu: ''
   subheader: ''
+  title_page_and_image: ''
+  wrapper_form_contact_: ''
+  wrapper_title_page_image: ''

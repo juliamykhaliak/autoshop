@@ -1,0 +1,40 @@
+uuid: 6e09af94-000c-4cf3-8478-19ab6206177a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view_and_text_block
+    - field.field.block_content.view_and_text_block.body
+    - field.field.block_content.view_and_text_block.field_comments_view_block
+  module:
+    - text
+    - viewfield
+id: block_content.view_and_text_block.default
+targetEntityType: block_content
+bundle: view_and_text_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_comments_view_block:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

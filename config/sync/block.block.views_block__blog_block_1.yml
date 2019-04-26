@@ -1,0 +1,30 @@
+uuid: 3f5820be-488a-4f79-aeb6-57264d7614a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__blog_block_1
+theme: bootstrap_sass
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:blog-block_1'
+settings:
+  id: 'views_block:blog-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

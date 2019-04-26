@@ -1,0 +1,8 @@
+uuid: a80b5569-e767-488c-8711-fcfa68a47ddd
+langcode: en
+status: true
+dependencies: {  }
+id: view_and_text_block
+label: 'View and text block'
+revision: 0
+description: ''

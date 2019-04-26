@@ -4,6 +4,7 @@ module:
   admin_toolbar_tools: 0
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   blockgroup: 0
@@ -51,6 +52,10 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_extras: 0
+  slick_ui: 0
+  slick_views: 0
   social_media: 0
   system: 0
   taxonomy: 0
@@ -61,6 +66,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  viewfield: 0
   views_fieldsets: 0
   views_ui: 0
   webform: 0

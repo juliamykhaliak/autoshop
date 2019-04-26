@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fb06afefddc93482a0bb752e41845b0",
+    "content-hash": "989603d1db1b95bb13aae15cc4227fc7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2220,6 +2220,69 @@
             }
         },
         {
+            "name": "drupal/blazy",
+            "version": "1.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/blazy.git",
+                "reference": "8.x-1.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc4.zip",
+                "reference": "8.x-1.0-rc4",
+                "shasum": "cea1185469fc6d19a5162f550e12f26cff193062"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc4",
+                    "datestamp": "1545235980",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                }
+            ],
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
+            "keywords": [
+                "Drupal",
+                "bLazy",
+                "lazyload"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
+            }
+        },
+        {
             "name": "drupal/blockgroup",
             "version": "1.1.0",
             "source": {
@@ -3639,6 +3702,168 @@
             }
         },
         {
+            "name": "drupal/slick",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "8565c1e74cfb5e6316c1cdb357868107303f2be4"
+            },
+            "require": {
+                "drupal/blazy": "~1.0",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1545236281",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                }
+            ],
+            "description": "Slick carousel, the last carousel you'll ever need.",
+            "homepage": "https://drupal.org/project/slick",
+            "keywords": [
+                "Drupal",
+                "carousel",
+                "slideshow"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/slick",
+                "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/slick_extras",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick_extras.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_extras-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "d8b5bf6df99a89781e90698e5676cfb42af0c691"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/slick": "*"
+            },
+            "require-dev": {
+                "drupal/slick": "*",
+                "drupal/slick_views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1552059184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel extras.",
+            "homepage": "https://www.drupal.org/project/slick_extras",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick_extras"
+            }
+        },
+        {
+            "name": "drupal/slick_views",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick_views.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "fdb8c73f26da5e8f06f478d76b1fa7b5d153428d"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/slick": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1546870081",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel integration with Views.",
+            "homepage": "https://www.drupal.org/project/slick_views",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick_views"
+            }
+        },
+        {
             "name": "drupal/social_media",
             "version": "1.3.0",
             "source": {
@@ -3807,6 +4032,62 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
+            "name": "drupal/viewfield",
+            "version": "3.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/viewfield.git",
+                "reference": "8.x-3.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewfield-8.x-3.0-alpha3.zip",
+                "reference": "8.x-3.0-alpha3",
+                "shasum": "f1b871df96c7de1c7534b2025899dcf8aa8e9c33"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha3",
+                    "datestamp": "1553884985",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jerdavis",
+                    "homepage": "https://www.drupal.org/user/228997"
+                },
+                {
+                    "name": "keithm",
+                    "homepage": "https://www.drupal.org/user/691250"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                }
+            ],
+            "description": "Defines an entity reference field type to display a view.",
+            "homepage": "http://drupal.org/project/viewfield",
+            "support": {
+                "source": "https://git.drupalcode.org/project/viewfield",
+                "issues": "https://www.drupal.org/project/issues/viewfield"
             }
         },
         {
@@ -9452,17 +9733,6 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.6.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "6b3d632fa16e56858706fe0394eafe88a13a9cd0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/6b3d632fa16e56858706fe0394eafe88a13a9cd0",
-                "reference": "6b3d632fa16e56858706fe0394eafe88a13a9cd0",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",

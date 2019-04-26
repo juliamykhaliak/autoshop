@@ -1,0 +1,34 @@
+uuid: c5cef0d1-7536-4416-b818-671d45efc67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view_and_text_block
+    - field.field.block_content.view_and_text_block.body
+    - field.field.block_content.view_and_text_block.field_comments_view_block
+  module:
+    - text
+    - viewfield
+id: block_content.view_and_text_block.default
+targetEntityType: block_content
+bundle: view_and_text_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comments_view_block:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden: {  }

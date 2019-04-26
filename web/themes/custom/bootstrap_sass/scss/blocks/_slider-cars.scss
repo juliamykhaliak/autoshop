@@ -1,0 +1,40 @@
+.view-id-slider_cars {
+  .view-content {
+    .slide__grid {
+      padding: 0;
+      .img-responsive {
+        width: 100%;
+        height: 380px;
+      }
+    }
+    .slider-text-fields {
+      color: rgb(255, 255, 255);
+      z-index: 2;
+      /*margin-left: 25px;
+      margin-top: -88px;
+      margin-bottom: 16px;*/
+      margin: -88px 0 16px 25px;
+      .views-field-title {
+        margin-bottom: 3px;
+        a {
+          font-size: 3rem;
+          color: rgb(255, 255, 255);
+        }
+      }
+      .details-car-slider {
+        display: flex;
+        .views-field {
+          margin-right: 7px;
+        }
+        .views-field-field-fu a,
+        .views-field-field-body a {
+          color: rgb(255, 255, 255);
+        }
+        .views-field-field-milleage,
+        .views-field-field-price {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

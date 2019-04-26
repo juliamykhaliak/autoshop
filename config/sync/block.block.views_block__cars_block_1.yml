@@ -1,0 +1,30 @@
+uuid: eabda600-3209-4c60-ae4e-cae45798f89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.cars
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__cars_block_1
+theme: bootstrap_sass
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:cars-block_1'
+settings:
+  id: 'views_block:cars-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

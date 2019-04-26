@@ -1,31 +1,31 @@
-uuid: 4bca54cf-f600-41e7-8667-30e9bc294623
+uuid: 1bfda55f-cd01-45cf-8926-26506cd83acf
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:map:512b8c18-0709-46c7-9629-7e3e270cdfd6'
+    - 'block_content:basic:ebaa5b2a-6745-42ef-97f2-482f7f9a2884'
   module:
     - block_content
     - system
   theme:
     - bootstrap_sass
-id: map
+id: premiumcars
 theme: bootstrap_sass
 region: content
-weight: -6
+weight: -14
 provider: null
-plugin: 'block_content:512b8c18-0709-46c7-9629-7e3e270cdfd6'
+plugin: 'block_content:ebaa5b2a-6745-42ef-97f2-482f7f9a2884'
 settings:
-  id: 'block_content:512b8c18-0709-46c7-9629-7e3e270cdfd6'
-  label: Map
+  id: 'block_content:ebaa5b2a-6745-42ef-97f2-482f7f9a2884'
+  label: 'Premium Cars'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /contact
+    pages: '<front>'
     negate: false
     context_mapping: {  }

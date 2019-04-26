@@ -2,10 +2,16 @@
   margin-top: 50px;
   margin-bottom: 80px;
   .car-node {
+    .field--name-field-media-image {
+      img {
+        width: 100%;
+      }
+    }
     color: $font-color-car-node-page;
     @include container();
     .wrap-title-price-label {
       display: flex;
+      margin-bottom: 50px;
       justify-content: space-between;
       align-items: center;
       .price-of-car {
@@ -38,6 +44,9 @@
         .field--name-field-deta > .field--label {
           @include car-node-page-title;
         }
+        .field--items {
+          padding-top: 35px;
+        }
         margin-top: 60px;
         display: flex;
         justify-content: space-between;
@@ -47,9 +56,86 @@
           width: 32%;
           box-shadow: $car-item-box-shadow 0 0 1px 1px;
         }
+        .field--name-field-additional-info {
+          .field--items {
+            padding-right: 23px;
+            padding-left: 23px;
+          }
+        }
         .field--name-field-additional-info .field--label,
         .field--name-field-buy-or-reserve .field--label {
           @include car-node-page-title();
+        }
+        .field--name-field-additional-info {
+          .first-par,
+          .second-par,
+          .third-par {
+            margin-bottom: 23px;
+          }
+        }
+        .field--name-field-deta {
+          .field--label,
+          .field--item {
+            padding-right: 0;
+          }
+          .field--label {
+            font-weight: unset;
+          }
+          .field--name-field-make,
+          .field--name-field-model,
+          .field--name-field-model,
+          .field--name-field-milleage,
+          .field--name-field-year,
+          .field--name-field-body,
+          .field--name-field-fu,
+          .field--name-field-price,
+          .field--name-field-dri {
+            .field--item,
+            .field--item a {
+              font-weight: bold;
+              color: $footer-background-color;
+            }
+            display: flex;
+            padding: 10px 23px;
+            justify-content: space-between;
+          }
+          .field--name-field-make,
+          .field--name-field-model,
+          .field--name-field-model,
+          .field--name-field-milleage,
+          .field--name-field-year,
+          .field--name-field-body,
+          .field--name-field-fu,
+          .field--name-field-price {
+            box-shadow: $car-item-box-shadow 0 1px 1px 0;
+          }
+        }
+        .field--name-field-buy-or-reserve {
+          input {
+            width: 100%;
+          }
+          .webform-submission-name-email-phone-add-form {
+            .form-group {
+              margin-bottom: 0;
+            }
+            #edit-actions-submit {
+              background-color: $price-button-hover-links-orange;
+              border: none;
+              border-radius: 2px;
+              padding: 10px 22px 5px;
+            }
+            padding: 35px 23px;
+            #edit-name,
+            #edit-phone-number,
+            #edit-email {
+              border: 1px solid $footer-background-color;
+              border-radius: 3px;
+              margin-bottom: 25px;
+              &::placeholder {
+                color: $footer-background-color;
+              }
+            }
+          }
         }
       }
     }

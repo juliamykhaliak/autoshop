@@ -6,12 +6,13 @@ dependencies:
     - blockgroup.block_group_content.wrapper_title_page_image
   module:
     - blockgroup
+    - system
   theme:
     - bootstrap_sass
 id: wrappertitlepageimage
 theme: bootstrap_sass
 region: content
-weight: -14
+weight: -17
 provider: null
 plugin: 'block_group:4e75169d-d8c7-4ec9-8f0c-57c05f682b5f'
 settings:
@@ -19,4 +20,9 @@ settings:
   label: Wrapper-title-page-image
   provider: blockgroup
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

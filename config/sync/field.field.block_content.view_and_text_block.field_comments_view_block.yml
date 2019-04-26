@@ -1,0 +1,48 @@
+uuid: 982e612c-9e15-4052-88bf-1b36c5a6cfef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view_and_text_block
+    - field.storage.block_content.field_comments_view_block
+  module:
+    - viewfield
+id: block_content.view_and_text_block.field_comments_view_block
+field_name: field_comments_view_block
+entity_type: block_content
+bundle: view_and_text_block
+label: Comments-view-block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: 0
+  allowed_views:
+    comments_recent: comments_recent
+    blog: 0
+    cars: 0
+    comment: 0
+    content: 0
+    block_content: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    media_library: 0
+    user_admin_people: 0
+    content_recent: 0
+    taxonomy_term: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  allowed_display_types:
+    block: block
+    embed: 0
+    feed: 0
+    default: 0
+    page: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

@@ -19,6 +19,7 @@ dependencies:
     - media
     - node
     - paragraphs
+    - slick_views
     - taxonomy
     - user
     - views_fieldsets
@@ -65,10 +66,13 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 9
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -77,9 +81,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: default
       row:
@@ -1177,6 +1178,69 @@ display:
         - url
         - url.query_args
         - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_additional_info'
+        - 'config:field.storage.node.field_photo'
+        - 'config:field.storage.paragraph.field_body'
+        - 'config:field.storage.paragraph.field_fu'
+        - 'config:field.storage.paragraph.field_milleage'
+        - 'config:field.storage.paragraph.field_price'
+        - 'config:field.storage.paragraph.field_year'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
+      defaults:
+        pager: false
+        title: false
+        filters: false
+        filter_groups: false
+        header: false
+      title: 'Our Latest Cars'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            car_node: car_node
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      allow:
+        items_per_page: false
+      header: {  }
+      block_description: 'Our latest cars'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:

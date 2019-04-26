@@ -1,0 +1,21 @@
+uuid: a2dd80e0-3c1e-4c51-8197-ac2655bb5eda
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - viewfield
+    - views
+id: block_content.field_comments_view_block
+field_name: field_comments_view_block
+entity_type: block_content
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
