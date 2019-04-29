@@ -20,6 +20,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/addtoany": "^1.12",
         "drupal/admin_toolbar": "^1.26",
         "drupal/better_social_sharing_buttons": "^1.4",
         "drupal/blockgroup": "^1.1",
