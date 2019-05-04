@@ -1,24 +1,30 @@
 .view-id-slider_cars {
   .view-content {
-    .slide__grid {
-      padding: 0;
-      .img-responsive {
-        width: 100%;
-        height: 380px;
+    .img-responsive {
+      width: 100%;
+      height: 380px;
+      @media all and (max-width: $desktop) {
+        height: 40vw;
+      }
+      @media all and (max-width: $mobile) {
+        height: 70vw;
       }
     }
     .slider-text-fields {
       color: rgb(255, 255, 255);
       z-index: 2;
-      /*margin-left: 25px;
-      margin-top: -88px;
-      margin-bottom: 16px;*/
       margin: -88px 0 16px 25px;
       .views-field-title {
         margin-bottom: 3px;
         a {
-          font-size: 3rem;
+          font-size: $car-page-number-of-cars-font-size;
           color: rgb(255, 255, 255);
+          @media all and (max-width: $desktop) {
+            font-size: $title-font-size;
+          }
+          @media all and (max-width: $mobile) {
+            font-size: $price-field-font-size;
+          }
         }
       }
       .details-car-slider {

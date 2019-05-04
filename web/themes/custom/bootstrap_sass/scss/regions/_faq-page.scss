@@ -1,0 +1,67 @@
+#block-faqdescription {
+  .field--type-text-with-summary {
+    @include container();
+    color: $color-blog-node-page;
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+    #faq-page-title {
+      font-size: $title-font-size;
+      margin: 90px 0 20px;
+      span {
+        font-weight: bold;
+      }
+      @media all and (max-width: $mobile) {
+        margin: 30px 0 15px;
+        font-size: $price-field-font-size;
+      }
+    }
+    #faq-page-description {
+      line-height: 25px;
+      margin-bottom: 90px;
+      @media all and (max-width: $desktop) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+#block-faq {
+  margin-bottom: 70px;
+  @media all and (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
+  .field--type-faqfield {
+    @include container();
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+    .field--item {
+      .ui-accordion {
+        .faqfield-question {
+          margin-top: 0;
+          background-color: transparent;
+          border-radius: unset;
+          border: 1px solid $border-price-field;
+          padding: 12px 10px;
+          .ui-icon {
+            background-image: url("../images/plus.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 15px;
+            margin-right: 13px;
+          }
+        }
+        .ui-state-active {
+          background-color: $color-blog-node-page;
+          & .ui-icon, .ui-button:active .ui-icon {
+            background-image: url("../images/minus.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 15px;
+            margin-right: 13px;
+          }
+        }
+      }
+    }
+  }
+}

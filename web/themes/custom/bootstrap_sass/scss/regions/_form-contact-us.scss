@@ -1,27 +1,50 @@
 #block-wrapperformcontactus {
   background-image: linear-gradient(#585F67, #323941);
   margin: 70px 0 100px;
+  @media all and (max-width: $desktop) {
+    margin: 40px 0;
+  }
   #block-contactus {
     padding: 50px 0;
     .block-title,
     .field--type-text-with-summary {
       color: rgb(255, 255, 255);
+      @media all and (max-width: $mobile) {
+        text-align: center;
+      }
     }
     .block-title {
       font-size: $title-font-size;
+      @media all and (max-width: $mobile) {
+        font-size: $price-field-font-size;
+      }
     }
     @include container();
+    @media all and (max-width: $desktop) {
+      padding: 15px 10px;
+      width: 100%;
+    }
     .webform-submission-contact-us-form {
       display: flex;
       justify-content: space-between;
+      @media all and (max-width: $desktop) {
+        flex-direction: column;
+      }
+      @media all and (max-width: $mobile) {
+        align-items: center;
+      }
       #edit-flexbox {
         margin-bottom: 0;
       }
       #edit-actions {
         width: 250px;
         margin: 20px 0;
+        @media all and (max-width: $desktop) {
+          width: 30%;
+          min-width: 184px;
+        }
         #edit-actions-submit {
-          width: 250px;
+          width: 100%;
           border: none;
           border-radius: 0;
           background-color: rgb(255, 255, 255);
@@ -37,11 +60,27 @@
       .form-type-email,
       .form-type-tel {
         width: 250px;
+        @media all and (max-width: $desktop) {
+          width: 43%;
+          min-width: 250px;
         }
+      }
+      .form-item-name input,
+      .form-type-email input,
+      .form-type-tel input {
+        width: 100%;
+      }
+      .form-type-textarea textarea {
+        width: 100%;
+      }
       .form-type-textarea {
         width: 500px;
+        @media  all and (max-width: $desktop) {
+          width: 43%;
+          min-width: 250px;
+        }
         #edit-message {
-          width: 500px;
+          width: 100%;
         }
       }
       .form-item-name,

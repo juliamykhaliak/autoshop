@@ -19,6 +19,11 @@
 @import 'blocks/title-page-image';
 @import 'blocks/filter';
 @import 'blocks/slider-cars';
+@import 'blocks/premium-cars';
+@import 'blocks/latest-cars';
+@import 'blocks/recent-comments';
+@import 'blocks/latest-blogs';
+@import 'blocks/comment-form';
 
 // Regions.
 @import 'regions/navbar';
@@ -26,3 +31,6 @@
 @import 'regions/cars-page';
 @import 'regions/blog-page';
 @import 'regions/car-node-page';
+@import 'regions/blog-node-page';
+@import 'regions/faq-page';
+@import 'regions/services-page';

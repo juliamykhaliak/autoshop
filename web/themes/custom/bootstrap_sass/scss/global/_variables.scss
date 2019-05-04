@@ -10,8 +10,14 @@ $input-form-borders: #555E69;
 $car-item-box-shadow: #EAEAEA;
 $font-color-car-node-page: #394048;
 $border-price-field: #CDD4DC;
+$border-bottom-premium-cars: #E1E7F0;
+$color-blog-node-page: #3d424a;
 
 // Font-sizes.
 $title-font-size: 2.5rem;
 $car-page-number-of-cars-font-size: 3rem;
 $price-field-font-size: 2rem;
+
+//Breakpoints.
+$desktop: 1024px;
+$mobile: 660px;

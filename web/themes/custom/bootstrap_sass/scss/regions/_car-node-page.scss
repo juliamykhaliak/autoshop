@@ -1,6 +1,9 @@
 .wrapper-node-car {
   margin-top: 50px;
   margin-bottom: 80px;
+  @media all and (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
   .car-node {
     .field--name-field-media-image {
       img {
@@ -9,11 +12,17 @@
     }
     color: $font-color-car-node-page;
     @include container();
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
     .wrap-title-price-label {
       display: flex;
       margin-bottom: 50px;
       justify-content: space-between;
       align-items: center;
+      @media all and (max-width: $desktop) {
+        margin-bottom: 5px;
+      }
       .price-of-car {
         padding: 6px 42px;
         font-size: 2.0rem;
@@ -41,6 +50,10 @@
     }
     .content {
       .info-details-form {
+        @media all and (max-width: $desktop) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
         .field--name-field-deta > .field--label {
           @include car-node-page-title;
         }
@@ -54,12 +67,20 @@
         .field--name-field-deta,
         .field--name-field-buy-or-reserve {
           width: 32%;
+
           box-shadow: $car-item-box-shadow 0 0 1px 1px;
+          @media all and (max-width: $desktop) {
+            min-width: 250px;
+            margin: 0 4px 10px;
+          }
         }
         .field--name-field-additional-info {
           .field--items {
             padding-right: 23px;
             padding-left: 23px;
+          }
+          @media all and (max-width: $desktop) {
+            flex: 100%;
           }
         }
         .field--name-field-additional-info .field--label,
@@ -74,6 +95,9 @@
           }
         }
         .field--name-field-deta {
+          @media all and (max-width: $desktop) {
+            flex: 49%;
+          }
           .field--label,
           .field--item {
             padding-right: 0;
@@ -111,6 +135,9 @@
           }
         }
         .field--name-field-buy-or-reserve {
+          @media all and (max-width: $desktop) {
+            flex: 48%;
+          }
           input {
             width: 100%;
           }
@@ -122,7 +149,7 @@
               background-color: $price-button-hover-links-orange;
               border: none;
               border-radius: 2px;
-              padding: 10px 22px 5px;
+              padding: 5px 22px;
             }
             padding: 35px 23px;
             #edit-name,
@@ -136,6 +163,9 @@
               }
             }
           }
+        }
+        @media all and (max-width: $desktop) {
+          margin-top: 20px;
         }
       }
     }

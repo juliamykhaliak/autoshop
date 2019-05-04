@@ -1,0 +1,175 @@
+.blog-node {
+  .wrapper-content-blog-node {
+    box-shadow: $car-item-box-shadow 0 1px 2px 1px;
+    border-radius: 3px;
+    margin-top: 40px;
+  }
+  .content {
+    color: $color-blog-node-page;
+    @include container();
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+    .image-blog-node {
+      img {
+        width: 100%;
+      }
+    }
+    #date-blog-node {
+      display: flex;
+    }
+    .wrapper-date-category {
+      margin: 30px 15px;
+      display: flex;
+      @media all and (max-width: $mobile) {
+        margin: 13px 15px;
+      }
+      .date-creation-node {
+        padding-left: 20px;
+        background-position: 0 1px;
+        background-repeat: no-repeat;
+        background-image: url("../images/calendar.png");
+        background-size: 11px 14px;
+        margin-right: 15px;
+        }
+      .author-name {
+        padding-left: 15px;
+        background-image: url("../images/edit.png");
+        background-size: 11px 14px;
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+        a {
+          color: $color-blog-node-page;
+        }
+      }
+      .category {
+        padding-left: 15px;
+        margin-left: 15px;
+        a {
+          color: $color-blog-node-page;
+        }
+        background-image: url("../images/list.png");
+        background-size: 11px 14px;
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+      }
+    }
+    .title-blog-node {
+      font-size: $title-font-size;
+      font-weight: bold;
+      margin-left: 15px;
+      margin-bottom: 30px;
+      @media all and (max-width: $mobile) {
+        font-size: $price-field-font-size;
+        margin-bottom: 8px;
+      }
+    }
+    .text-content-blog-node {
+      margin: 0 15px;
+      .fisrt-par {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+      }
+      .second-par,
+      .third-par,
+      .fourth-par {
+        margin-bottom: 20px;
+      }
+      .third-par {
+        font-size: 1.75rem;
+        font-style: italic;
+      }
+    }
+    .tags-blog-node {
+      box-shadow: $car-item-box-shadow 0 0 1px 1px;
+      padding: 20px 0;
+    }
+    .field--name-field-tags-of- {
+      padding-left: 32px;
+      background-image: url("../images/tags.png");
+      background-size: 16px;
+      background-repeat: no-repeat;
+      background-position: 0 1px;
+      margin-left: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      .field--item {
+        margin-right: 10px;
+        &:after {
+          content: ",";
+          display: inline-block;
+        }
+        &:last-child {
+          &:after {
+            content: none;
+            display: none;
+          }
+        }
+        a {
+          color: $color-blog-node-page;
+        }
+      }
+    }
+    .add-social-media {
+      display: flex;
+      margin: 0 15px;
+      padding: 20px 0;
+      a {
+        margin: 0 8px;
+        @media all and (max-width: $desktop) {
+          margin: 0 3px 12px;
+        }
+      }
+    }
+    .user-picture-comment-blog-node-page {
+      width: 80px;
+    }
+    .comments-blog-node {
+      h2 {
+        font-size: $title-font-size;
+        font-weight: bold;
+        @media all and (max-width: $mobile) {
+          font-size: $price-field-font-size;
+        }
+      }
+      .js-comment {
+        footer {
+          display: flex;
+          margin: 25px 0;
+          .wrapper-author-name-comment-body-of-comments {
+            margin-left: 80px;
+          }
+        }
+       .comment-node-blog-author-date {
+         display: flex;
+         margin-bottom: 20px;
+       }
+        .author-of-comment {
+          display: flex;
+          flex-direction: column;
+          margin-right: 10px;
+          a {
+            font-weight: bold;
+            color: $color-blog-node-page;
+          }
+        }
+        .comment-blog-node-page {
+          h3 {
+            display: none;
+          }
+          .list-inline {
+            margin-top: 10px;
+            padding-left: 27px;
+            background-image: url("../images/reply-arrow.png");
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: 5px 1px;
+            a {
+              color: $price-button-hover-links-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

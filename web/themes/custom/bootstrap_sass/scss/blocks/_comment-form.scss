@@ -1,0 +1,49 @@
+.blog-node {
+  #comment-form {
+    #edit-submit {
+      background-color: $price-button-hover-links-orange;
+      padding: 5px 20px;
+      border-radius: 3px;
+      border: none;
+      &:active {
+        border: none;
+      }
+    }
+    margin-bottom: 60px;
+    .control-label {
+      font-weight: unset;
+    }
+    .form-textarea,
+    .form-text {
+      border: $car-item-box-shadow solid 1px;
+      border-radius: 3px;
+    }
+    #edit-subject-wrapper {
+      width: 44%;
+      .form-text {
+        width: 100%;
+      }
+      @media all and (max-width: $desktop) {
+        min-width: 370px;
+      }
+      @media all and (max-width: $mobile) {
+        min-width: 290px;
+      }
+    }
+    .form-textarea-wrapper {
+      width: 44%;
+      .form-textarea {
+        width: 100%;
+      }
+      @media all and (max-width: $desktop) {
+        min-width: 370px;
+      }
+      @media all and (max-width: $mobile) {
+        min-width: 290px;
+      }
+    }
+    @media all and (max-width: $mobile) {
+      margin-bottom: 13px;
+    }
+  }
+}

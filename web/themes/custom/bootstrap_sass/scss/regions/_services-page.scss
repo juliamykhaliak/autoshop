@@ -1,0 +1,68 @@
+#block-carellservicespagewrapper {
+  #block-carellservices {
+    color: $color-blog-node-page;
+    @include container();
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+    .block-title {
+      @include title-latest-cars-and-blogs();
+      margin: 55px 0 110px;
+      @media all and (max-width: $desktop) {
+        margin: 40px 0 50px;
+      }
+      @media all and (max-width: $mobile) {
+        padding: 0 10px 17px;
+        margin: 15px auto 20px;
+        font-size: 2rem;
+      }
+      &::after {
+        @include after-square();
+        @media all and (max-width: $mobile) {
+          @include after-square-mobile();
+        }
+      }
+    }
+    .field--name-field-paragraphs {
+      margin-bottom: 110px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media all and (max-width: $desktop) {
+        justify-content: center;
+        margin-bottom: 0;
+      }
+      .paragraph--type--media-title {
+        padding: 30px 55px;
+        border: 1px solid $border-bottom-premium-cars;
+        border-radius: 3px;
+        margin-right: 10px;
+        @media all and (max-width: $desktop) {
+          margin-bottom: 10px;
+          width: 232px;
+        }
+      }
+      .field--name-field-image {
+        width: 120px;
+      }
+      .field--name-field-title {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+    .field--type-text-with-summary {
+      margin-bottom: 70px;
+      @media all and (max-width: $desktop) {
+        margin-bottom: 36px;
+      }
+      .become-partner-title {
+        font-size: $price-field-font-size;
+        font-weight: bold;
+      }
+      .first-par {
+        font-size: 1.65rem;
+        margin: 20px 0;
+      }
+    }
+  }
+}

@@ -3,12 +3,19 @@
   flex-direction: column;
   .region-navigation {
     @include container();
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
   }
   .navbar-collapse {
     padding: 0;
   }
   .navbar-header {
     background-color: $subheader;
+    @media all and (max-width: $desktop) {
+      width: 100%;
+      margin: auto;
+    }
   }
 }
 

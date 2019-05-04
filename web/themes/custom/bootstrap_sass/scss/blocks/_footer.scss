@@ -6,10 +6,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: $desktop) {
+      padding: 20px 10px;
+      width: 100%;
+    }
+    @media all and (max-width: $mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     @include container();
     .menu--footer-menu {
       display: flex;
       a {
+        &:hover {
+          color: $price-button-hover-links-orange;
+        }
+        &:active {
+          background-color: transparent;
+        }
         color: rgb(255, 255, 255);
         &:hover {
           background-color: unset;

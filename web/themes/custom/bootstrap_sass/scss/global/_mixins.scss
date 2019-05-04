@@ -17,3 +17,34 @@
   text-transform: uppercase;
   padding: 13px 23px;
 }
+@mixin after-square() {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: $price-button-hover-links-orange;
+  position: absolute;
+  margin-top: 61px;
+  right: 50%;
+  border-radius: 3px;
+}
+@mixin after-square-mobile() {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: $price-button-hover-links-orange;
+  position: absolute;
+  margin-top: 34px;
+  right: 50%;
+  border-radius: 2px;
+}
+@mixin title-latest-cars-and-blogs() {
+  text-align: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid $border-bottom-premium-cars;
+}
+@mixin container-desktop() {
+  width: 100%;
+  padding: 0 10px;
+}

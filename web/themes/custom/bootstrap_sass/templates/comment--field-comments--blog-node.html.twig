@@ -76,27 +76,28 @@
   <mark class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></mark>
 
   <footer>
-    {{ user_picture }}
-    <p>{{ submitted }}</p>
-
-    {#
-      Indicate the semantic relationship between parent and child comments for
-      accessibility. The list is difficult to navigate in a screen reader
-      without this information.
-    #}
-    {% if parent %}
-      <p class="visually-hidden">{{ parent }}</p>
-    {% endif %}
-
-    {{ permalink }}
+    <div class="user-picture-comment-blog-node-page">{{ user_picture }}</div>
+    <div class="wrapper-author-name-comment-body-of-comments">
+      <div class="comment-node-blog-author-date">
+          <div class="author-of-comment">{{ author }}</div>
+        <div class="date-of-creation-of-comment">{{ created }}</div>
+      </div>
+      {#
+        Indicate the semantic relationship between parent and child comments for
+        accessibility. The list is difficult to navigate in a screen reader
+        without this information.
+      #}
+      {% if parent %}
+        <p class="visually-hidden">{{ parent }}</p>
+      {% endif %}
+    <div{{ content_attributes }} class="comment-blog-node-page">
+      {% if title %}
+        {{ title_prefix }}
+        <h3{{ title_attributes }}>{{ title }}</h3>
+        {{ title_suffix }}
+      {% endif %}
+      {{ content }}
+    </div>
+    </div>
   </footer>
-
-  <div{{ content_attributes }}>
-    {% if title %}
-      {{ title_prefix }}
-      <h3{{ title_attributes }}>{{ title }}</h3>
-      {{ title_suffix }}
-    {% endif %}
-    {{ content }}
-  </div>
 </article>

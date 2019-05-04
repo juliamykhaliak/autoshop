@@ -121,7 +121,7 @@ gulp.task('browser-sync', function() {
     'templates/**/*.twig'
   ];
   browserSync.init({
-    proxy: "justfortest.loc",
+    proxy: "autoshop.loc",
     online: true
   });
 });

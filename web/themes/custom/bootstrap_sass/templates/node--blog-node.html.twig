@@ -67,45 +67,56 @@
 #}
 {%
   set classes = [
-    node.bundle|clean_class,
-    node.isPromoted() ? 'is-promoted',
-    node.isSticky() ? 'is-sticky',
-    not node.isPublished() ? 'is-unpublished',
-    view_mode ? view_mode|clean_class,
-    'clearfix',
-  ]
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+  'clearfix',
+]
 %}
-<div class="wrapper-node-car">
-  <article{{ attributes.addClass(classes) }}>
-    {{ title_prefix }}
-    {% if not page %}
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
-    <div class="wrap-title-price-label">
-      <div class="wrapper-date-title">
-        {% if display_submitted %}
-          <footer>
-            <div class="wrap-icon-date">
-              <div class="calendar-icon"></div>
-              <div{{ author_attributes.addClass('date-submit') }}>
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <div{{ content_attributes.addClass('content') }}>
+      <div class="wrapper-content-blog-node">
+        <div class="image-blog-node">
+          {{ content.field_image_blog }}
+        </div>
+        <div class="wrapper-date-category">
+          <div id="date-blog-node">{% trans %}
+              <div class="date-creation-node">
                 {{ date }}
               </div>
-            </div>
-          </footer>
-        {% endif %}
-        <div class="node-title">{{ node.label }}</div>
+              <div class="author-name">
+              {{ author_name }}
+              </div>{% endtrans %}</div>
+          <div class="category">{{ content.field_category }}</div>
+        </div>
+        <div class="title-blog-node">
+          {{ content.field_title }}
+        </div>
+        <div class="text-content-blog-node">
+          {{ content.body }}
+        </div>
+        <div class="tags-blog-node">
+          {{ content.field_tags_of_ }}
+        </div>
+        <div class="add-social-media">
+          {{ content.addtoany }}
+        </div>
       </div>
-      <div class="price-of-car">
-        {% for item in node.field_deta %}
-          ${{ item.entity.field_price.value }}
-        {% endfor %}
+      <div class="comments-blog-node">
+        {{ content.field_comments }}
       </div>
     </div>
-    <div{{ content_attributes.addClass('content') }}>
-      {{ content }}
-    </div>
-  </article>
-</div>
+  {% endif %}
+</article>

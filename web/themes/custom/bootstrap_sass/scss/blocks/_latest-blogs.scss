@@ -1,0 +1,57 @@
+#block-latestblogswrapper {
+  color: $font-color-car-node-page;
+  .block-title {
+    @include container();
+    @include title-latest-cars-and-blogs();
+    margin-top: 60px;
+    margin-bottom: -10px;
+    &::after {
+      @include after-square();
+      @media all and (max-width: $mobile) {
+        @include after-square-mobile();
+      }
+    }
+    @media all and (max-width: $desktop) {
+      padding: 0 10px 35px;
+      width: 100%;
+      margin-top: 17px;
+      margin-bottom: 15px;
+    }
+    @media all and (max-width: $mobile) {
+      font-size: $price-field-font-size;
+      padding: 0px 10px 17px;
+      margin: 15px auto 20px;
+    }
+  }
+}
+#block-visitbloglink {
+  .field--type-text-with-summary {
+    margin: 0 auto 110px;
+    max-width: 100%;
+    width: 1024px;
+    text-align: center;
+    a {
+      padding: 13px 30px;
+      border: 1px solid $border-bottom-premium-cars;
+      border-radius: 3px;
+      color: $font-color-car-node-page;
+      font-size: $price-field-font-size;
+      @media all and (max-width: $mobile) {
+        font-size: 1.6rem;
+        padding: 8px 12px;
+      }
+      .plus {
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: $car-page-number-of-cars-font-size;
+        @media all and (max-width: $mobile) {
+          font-size: $price-field-font-size;
+        }
+      }
+    }
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+      margin-bottom: 50px;
+    }
+  }
+}

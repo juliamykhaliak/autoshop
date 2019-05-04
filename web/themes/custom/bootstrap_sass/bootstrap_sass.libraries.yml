@@ -2,6 +2,7 @@ framework:
   css:
     theme:
       css/style.css: {}
+      /libraries/slick/slick/slick.css: {}
   js:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
     bootstrap/assets/javascripts/bootstrap/alert.js: {}
@@ -15,3 +16,7 @@ framework:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+    /libraries/slick/slick/slick.min.js: { minified: true }
+    javascript/main.js: {}
+  dependencies:
+    - core/jquery

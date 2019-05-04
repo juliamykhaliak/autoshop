@@ -28,3 +28,8 @@ body {
   width: unset;
   border: none;
 }
+.navbar-right {
+  @media all and (max-width: $desktop) {
+    float: unset !important;
+  }
+}

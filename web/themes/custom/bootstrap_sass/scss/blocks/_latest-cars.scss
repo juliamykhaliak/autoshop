@@ -1,0 +1,24 @@
+#block-latestcarswrapper {
+  color: $font-color-car-node-page;
+  .block-title {
+    @include container();
+    @include title-latest-cars-and-blogs();
+    margin: 60px auto;
+    &::after {
+    @include after-square();
+      @media all and (max-width: $mobile) {
+      @include after-square-mobile();
+      }
+    }
+    @media all and (max-width: $desktop) {
+      width: 100%;
+      padding: 0 10px 35px;
+      margin: 20px auto 37px;
+    }
+    @media all and (max-width: $mobile) {
+      font-size: $price-field-font-size;
+      padding: 0px 10px 17px;
+      margin: 15px auto 20px;
+    }
+  }
+}

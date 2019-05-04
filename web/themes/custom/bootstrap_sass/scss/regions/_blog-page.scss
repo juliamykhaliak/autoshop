@@ -5,6 +5,11 @@
     flex-wrap: wrap;
     padding: 90px 0 0;
     @include container();
+    @media all and (max-width: $desktop) {
+      padding: 13px 10px 0;
+      width: 100%;
+      justify-content: center;
+    }
     .views-row {
       margin-bottom: 50px;
       box-shadow: $car-item-box-shadow 0 0 1px 1px;
@@ -12,6 +17,9 @@
       display:  flex;
       flex-direction:  column;
       align-items:  center;
+      @media all and (max-width: $desktop) {
+        margin: 0 10px 22px;
+      }
       .author-date-comment-wrapper {
         display:  flex;
         margin-top: 25px;
@@ -68,6 +76,10 @@
       .views-field-title {
         font-size: $title-font-size;
         margin: 15px 0;
+         @media all and (max-width: $mobile) {
+           font-size: $price-field-font-size;
+           margin: 15px 0 0;
+         }
       }
     }
   }

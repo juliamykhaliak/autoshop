@@ -1,0 +1,104 @@
+#block-recentcommentsblock {
+  padding: 80px 0px;
+  background-image: url("../images/cars-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .field--type-text-with-summary {
+    color: rgb(255, 255, 255);
+    @include container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #title-comment-block {
+      font-weight: bold;
+      margin-top: 0;
+      @media all and (max-width: $mobile) {
+        font-size: $price-field-font-size;
+        text-align: center;
+      }
+    }
+    .subparagraph {
+      text-align: center;
+      margin: 10px 0 46px;
+      @media all and (max-width: $desktop) {
+        margin: 10px 0 20px;
+      }
+      @media all and (max-width: $mobile) {
+        margin: 0 0 15px;
+      }
+    }
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+  }
+  .view-id-comments_recent {
+    color: $font-color-car-node-page;
+    @include container();
+    .view-content {
+      display: flex;
+      justify-content: center;
+      @media all and (max-width: $desktop) {
+        flex-wrap: wrap;
+
+      }
+      .views-row {
+        width: 48.8%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &:first-child {
+          margin-right: 25px;
+          @media all and (max-width: $desktop) {
+            margin-right: 10px;
+            margin-bottom: 13px;
+          }
+        }
+        .username-date-wrapper {
+          display: flex;
+          .views-field-name-2 {
+            margin-right: 15px;
+            font-weight: bold;
+          }
+        }
+        .wrapper-text-username-date {
+          margin: 20px;
+          max-height: 117px;
+          overflow: auto;
+          .field-content {
+            margin-bottom: 16px;
+            font-style: italic;
+          }
+        }
+        .views-field-user-picture {
+          .field-content {
+            width: 156px;
+            @media all and (max-width: $mobile) {
+              width: 100px;
+            }
+          }
+        }
+        @media all and (max-width: $desktop) {
+          margin: 0 10px;
+          min-width: 478px;
+          max-height: 156px;
+        }
+        @media all and (max-width: $mobile) {
+          min-width: 300px;
+          width: 90%;
+          max-height: 99px;
+        }
+      }
+    }
+    @media all and (max-width: $desktop) {
+      @include container-desktop();
+    }
+  }
+  @media all and (max-width: $desktop) {
+    padding: 35px 0px;
+  }
+  @media all and (max-width: $mobile) {
+    padding: 17px 0px;
+  }
+}

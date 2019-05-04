@@ -1,9 +1,16 @@
 .view-id-cars {
   @include container();
+  @media all and (max-width: $desktop) {
+    @include container-desktop();
+  }
   .view-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media all and (max-width: $desktop) {
+      justify-content: center;
+      padding-bottom: 30px;
+    }
     .views-row {
       color: $footer-background-color;
       display: flex;
@@ -20,6 +27,10 @@
         display:  flex;
         justify-content:  center;
         margin: 20px 0;
+        @media all and (max-width: $mobile) {
+          font-size: $price-field-font-size;
+          margin: 15px 0 0;
+        }
       }
       .price-fuel-milleage-wrapper {
         display:  flex;
@@ -60,10 +71,20 @@
           color: rgb(255, 255, 255);
         }
       }
+      @media all and (max-width: $desktop) {
+        margin: 6px 5px;
+      }
     }
   }
   .view-header {
     font-size: $car-page-number-of-cars-font-size;
     margin: 60px 0;
+    @media all and (max-width: $desktop) {
+      margin: 20px 0;
+    }
+    @media all and (max-width: $mobile) {
+      margin: 8px 0;
+      font-size: $price-field-font-size;
+    }
   }
 }

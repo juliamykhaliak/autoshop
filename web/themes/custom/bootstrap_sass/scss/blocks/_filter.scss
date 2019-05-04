@@ -13,6 +13,17 @@
   }
   .form-inline {
     @include container();
+    @media all and (max-width: $desktop){
+      @include container-desktop();
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .select-wrapper {
+        @media all and (max-width: $desktop) {
+          padding-bottom: 10px;
+        }
+      }
+    }
   }
   background-color: $footer-background-color;
   #edit-field-make-target-id,
