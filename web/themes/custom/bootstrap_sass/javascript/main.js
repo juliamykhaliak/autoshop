@@ -8,7 +8,7 @@
         $('.js-show-more-button').toggleClass('cross-icon-button-js');
       });
       $('.view-id-slider_cars .view-content').once().slick({
-        infinity: true,
+        infinite: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,

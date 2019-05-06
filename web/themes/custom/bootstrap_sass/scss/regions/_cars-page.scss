@@ -78,13 +78,38 @@
   }
   .view-header {
     font-size: $car-page-number-of-cars-font-size;
-    margin: 60px 0;
+    margin: 60px 0 10px;
     @media all and (max-width: $desktop) {
       margin: 20px 0;
     }
     @media all and (max-width: $mobile) {
       margin: 8px 0;
       font-size: $price-field-font-size;
+    }
+  }
+  .pager-nav {
+    margin-bottom: 30px;
+    text-align: justify;
+    @media all and (max-width: $desktop) {
+      margin-bottom: 0;
+    }
+    .pagination {
+      border-radius: unset;
+      @media all and (max-width: $mobile) {
+        margin: 5px 0;
+      }
+      .pager__item {
+        a {
+          color: $footer-background-color;
+          margin: 1px;
+          border-radius: 2px;
+        }
+        &.is-active a {
+          background-color: $footer-background-color;
+          color: rgb(255, 255, 255);
+          border: 1px solid $footer-background-color;
+        }
+      }
     }
   }
 }

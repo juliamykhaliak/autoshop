@@ -1259,13 +1259,35 @@ display:
       display_extenders: {  }
       path: cars
       exposed_block: true
-      use_more: true
+      use_more: false
       defaults:
         use_more: false
         use_more_always: false
         use_more_text: false
+        pager: false
       use_more_always: false
       use_more_text: 'next »'
+      pager:
+        type: full
+        options:
+          items_per_page: 9
+          offset: 0
+          id: 0
+          total_pages: 0
+          tags:
+            previous: ''
+            next: 'next »'
+            first: ''
+            last: ''
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
     cache_metadata:
       max-age: -1
       contexts:

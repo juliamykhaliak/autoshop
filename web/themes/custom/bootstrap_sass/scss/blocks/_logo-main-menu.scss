@@ -17,6 +17,7 @@
   }
   #block-logoandmainmenu {
     display: flex;
+    z-index: 11;
     padding-right: 15px;
     justify-content: space-between;
     .menu--main {
