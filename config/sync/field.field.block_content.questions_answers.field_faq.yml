@@ -1,0 +1,22 @@
+uuid: 815efaf9-adf4-487d-bc18-28e57ed2fb9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.questions_answers
+    - field.storage.block_content.field_faq
+  module:
+    - faqfield
+id: block_content.questions_answers.field_faq
+field_name: field_faq
+entity_type: block_content
+bundle: questions_answers
+label: FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: plain_text
+field_type: faqfield

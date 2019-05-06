@@ -1,0 +1,31 @@
+uuid: 20e60a25-4975-49ca-8d2e-2347996cacef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:paragraphs_multple:3ff3ed92-ea5a-443d-bd3b-ee53406789f7'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_sass
+id: carellservices
+theme: bootstrap_sass
+region: carell_services_page_wrapper
+weight: -20
+provider: null
+plugin: 'block_content:3ff3ed92-ea5a-443d-bd3b-ee53406789f7'
+settings:
+  id: 'block_content:3ff3ed92-ea5a-443d-bd3b-ee53406789f7'
+  label: 'Carell services'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /services
+    negate: false
+    context_mapping: {  }

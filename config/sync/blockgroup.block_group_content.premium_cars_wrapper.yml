@@ -1,0 +1,6 @@
+uuid: c9c3fe65-1ec8-4bce-adce-f37772dba1cf
+langcode: en
+status: true
+dependencies: {  }
+id: premium_cars_wrapper
+label: 'Premium cars wrapper'

@@ -1,16 +1,17 @@
-uuid: 25b8f335-0677-457a-9538-fe0a564ebaa7
+uuid: 3def7c43-8a63-4ba4-9551-959d46260445
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - social_media
-id: node.field_social_
-field_name: field_social_
+    - taxonomy
+id: node.field_category
+field_name: field_category
 entity_type: node
-type: social_media
-settings: {  }
-module: social_media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

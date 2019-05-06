@@ -5,7 +5,6 @@
   @include container();
   @media all and (max-width: $desktop) {
     width: 100%;
-    display: flex;
     padding: 10px 10px 8px;
     position: relative;
   }
@@ -87,14 +86,33 @@
   }
   .js-show-more-button {
     @media all and (max-width: $desktop) {
-      z-index: 10;
-      cursor: pointer;
-      width: 45px;
-      height: 45px;
-      background-image: url("../images/menu.png");
-      background-size: 40px;
-      background-position: center;
-      background-repeat: no-repeat;
+     @include burger-menu-icon-show-more();
+      margin-top: 9px;
+      &::before {
+        display: block;
+        content: "";
+        @include burger-menu-icon-show-more();
+        margin-top: 10px;
+      }
+      &::after {
+        display: block;
+        content: "";
+        @include burger-menu-icon-show-more();
+        margin-top: 4px;
+      }
+    }
+  }
+  .cross-icon-button-js {
+    transform: translate3d(0,10px,0)  rotate(45deg);
+    transition: all .3s;
+    cursor: pointer;
+    &::before {
+      opacity: 0;
+      transition: all .05s;
+    }
+    &::after {
+      transform: translate3d(0,-20px,0) rotate(-90deg);
+      transition: all .3s;
     }
   }
 }

@@ -1,0 +1,12 @@
+uuid: 1007294d-f8af-4245-bbcc-6e8869c587e8
+langcode: en
+status: true
+dependencies: {  }
+id: carell_services
+label: 'Carell Services'
+description: ''
+use_admin_theme: false
+path: /services
+access_logic: and
+access_conditions: {  }
+parameters: {  }

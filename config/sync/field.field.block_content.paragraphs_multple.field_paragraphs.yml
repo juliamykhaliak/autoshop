@@ -1,0 +1,37 @@
+uuid: d2f89859-9faf-4a84-a673-dcfddc5be67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraphs_multple
+    - field.storage.block_content.field_paragraphs
+    - paragraphs.paragraphs_type.media_title
+  module:
+    - entity_reference_revisions
+id: block_content.paragraphs_multple.field_paragraphs
+field_name: field_paragraphs
+entity_type: block_content
+bundle: paragraphs_multple
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      media_title: media_title
+    target_bundles_drag_drop:
+      media_title:
+        enabled: true
+        weight: 4
+      title_and_taxonomy:
+        weight: 5
+        enabled: false
+      title_description:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

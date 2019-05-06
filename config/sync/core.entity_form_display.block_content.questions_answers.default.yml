@@ -1,0 +1,37 @@
+uuid: 8ba8906f-7548-4873-8369-28c69d44384e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.questions_answers
+    - field.field.block_content.questions_answers.field_faq
+  module:
+    - faqfield
+id: block_content.questions_answers.default
+targetEntityType: block_content
+bundle: questions_answers
+mode: default
+content:
+  field_faq:
+    weight: 27
+    settings:
+      answer_widget: text_format
+      question_title: Question
+      answer_title: Answer
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 3
+    third_party_settings: {  }
+    type: faqfield_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

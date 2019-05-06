@@ -1,0 +1,28 @@
+uuid: 62c46b45-8de0-4ac9-b3b7-539ed2831744
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.carell_services_page_wrapper
+  module:
+    - blockgroup
+    - system
+  theme:
+    - bootstrap_sass
+id: carellservicespagewrapper
+theme: bootstrap_sass
+region: content
+weight: -4
+provider: null
+plugin: 'block_group:3659e0dc-3770-40f5-9763-a6ef7f6bdda4'
+settings:
+  id: 'block_group:3659e0dc-3770-40f5-9763-a6ef7f6bdda4'
+  label: Carell-services-page-wrapper
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /services
+    negate: false
+    context_mapping: {  }

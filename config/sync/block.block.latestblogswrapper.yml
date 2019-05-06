@@ -1,0 +1,28 @@
+uuid: 6f8b985a-908d-49dd-a8eb-2d8079b50af8
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.latest_blogs_wrapper
+  module:
+    - blockgroup
+    - system
+  theme:
+    - bootstrap_sass
+id: latestblogswrapper
+theme: bootstrap_sass
+region: content
+weight: -14
+provider: null
+plugin: 'block_group:db5fce00-87a0-4cd7-9a38-dad03c953693'
+settings:
+  id: 'block_group:db5fce00-87a0-4cd7-9a38-dad03c953693'
+  label: Latest-blogs-wrapper
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: recentcommentsblock
 theme: bootstrap_sass
 region: content
-weight: -12
+weight: -15
 provider: null
 plugin: 'block_content:44a9d4c4-3749-455b-8eb9-799908e64ecf'
 settings:

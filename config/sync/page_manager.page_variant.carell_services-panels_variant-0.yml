@@ -1,0 +1,28 @@
+uuid: 32960788-269e-4cc1-9594-38bbb200e923
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.carell_services
+  module:
+    - panels
+id: carell_services-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: b8205714-581d-4183-90cf-d2e8ebad8c84
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: 'Carell services'
+  storage_type: page_manager
+  storage_id: carell_services-panels_variant-0
+  builder: standard
+page: carell_services
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -11,8 +11,8 @@ dependencies:
     - bootstrap_sass
 id: premiumcars
 theme: bootstrap_sass
-region: content
-weight: -14
+region: premium_cars_wrapper
+weight: -17
 provider: null
 plugin: 'block_content:ebaa5b2a-6745-42ef-97f2-482f7f9a2884'
 settings:

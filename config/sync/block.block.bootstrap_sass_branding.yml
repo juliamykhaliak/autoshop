@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: bootstrap_sass_branding
 theme: bootstrap_sass
-region: logo_and_main_menu
-weight: -11
+region: header
+weight: -20
 provider: null
 plugin: system_branding_block
 settings:

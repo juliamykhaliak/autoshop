@@ -1,0 +1,28 @@
+uuid: 57a18c9f-c829-4f31-bf50-b5949f8f67ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.latest_cars_wrapper
+  module:
+    - blockgroup
+    - system
+  theme:
+    - bootstrap_sass
+id: latestcarswrapper
+theme: bootstrap_sass
+region: content
+weight: -16
+provider: null
+plugin: 'block_group:e037bdda-7a65-41e6-aaaa-6b1be5588ec8'
+settings:
+  id: 'block_group:e037bdda-7a65-41e6-aaaa-6b1be5588ec8'
+  label: Latest-cars-wrapper
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

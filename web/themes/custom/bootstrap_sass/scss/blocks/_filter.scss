@@ -9,7 +9,13 @@
     border: #2D333D 1px solid;
   }
   .select-wrapper:after {
-    z-index: -2;
+    content: '\e236';
+    right: 16px;
+    top: 50%;
+    color: $text-subheader;
+    @media all and (max-width: $desktop) {
+      top: calc(50% - 5px);
+    }
   }
   .form-inline {
     @include container();

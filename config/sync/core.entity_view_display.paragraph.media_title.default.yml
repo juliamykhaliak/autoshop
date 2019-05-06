@@ -1,0 +1,32 @@
+uuid: 653dfa6a-7c7a-4c84-af5e-643eb161d2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_title.field_image
+    - field.field.paragraph.media_title.field_title
+    - paragraphs.paragraphs_type.media_title
+  module:
+    - image
+id: paragraph.media_title.default
+targetEntityType: paragraph
+bundle: media_title
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

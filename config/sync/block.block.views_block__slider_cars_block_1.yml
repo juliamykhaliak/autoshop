@@ -1,4 +1,4 @@
-uuid: fb192aaa-910f-4a2a-8063-ba679f551bc3
+uuid: b067fbaf-6be2-4cc3-9849-5918666f5ea4
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slider_cars_block_1
 theme: bootstrap_sass
 region: content
-weight: -16
+weight: -20
 provider: null
 plugin: 'views_block:slider_cars-block_1'
 settings:

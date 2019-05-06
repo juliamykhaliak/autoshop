@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.comment.comment_body
+    - field.storage.comment.field_comment_body
     - field.storage.user.user_picture
   module:
     - comment
     - image
     - node
-    - text
     - user
+    - views_fieldsets
 _core:
   default_config_hash: HacS-nsDH7uyoKhQHNyV_MNRClmPVuhU_fWZgNuEyIs
 id: comments_recent
@@ -138,10 +138,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        comment_body:
-          id: comment_body
-          table: comment__comment_body
-          field: comment_body
+        fieldset:
+          id: fieldset
+          table: views
+          field: fieldset
           relationship: none
           group_type: group
           admin_label: ''
@@ -178,7 +178,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -186,20 +186,17 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          fields:
+            - comment_body
+            - name_1
+            - field_comment_body
+            - fieldset_1
+          wrapper: div
+          legend: ''
+          classes: wrapper-text-username-date
+          collapsible: 1
+          collapsed: 0
+          plugin_id: fieldset
         name_1:
           id: name_1
           table: comment_field_data
@@ -264,6 +261,125 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
+        field_comment_body:
+          id: field_comment_body
+          table: comment__field_comment_body
+          field: field_comment_body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 60
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        fieldset_1:
+          id: fieldset_1
+          table: views
+          field: fieldset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          fields:
+            - name_2
+            - changed
+          wrapper: div
+          legend: ''
+          classes: username-date-wrapper
+          collapsible: 1
+          collapsed: 0
+          plugin_id: fieldset
         name_2:
           id: name_2
           table: users_field_data
@@ -469,7 +585,7 @@ display:
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.comment.comment_body'
+        - 'config:field.storage.comment.field_comment_body'
         - 'config:field.storage.user.user_picture'
   block_1:
     display_plugin: block
@@ -489,5 +605,5 @@ display:
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.comment.comment_body'
+        - 'config:field.storage.comment.field_comment_body'
         - 'config:field.storage.user.user_picture'

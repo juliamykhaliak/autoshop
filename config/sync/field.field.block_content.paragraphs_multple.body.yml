@@ -1,0 +1,22 @@
+uuid: 3d2e6026-6d75-4b35-8ec0-1f18919ecf98
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraphs_multple
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.paragraphs_multple.body
+field_name: body
+entity_type: block_content
+bundle: paragraphs_multple
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

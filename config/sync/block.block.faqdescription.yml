@@ -1,0 +1,31 @@
+uuid: bc2f8b64-cc8c-41c8-8712-019d11d206b6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b338c2b-59b9-49db-b30e-f15cd396e610'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_sass
+id: faqdescription
+theme: bootstrap_sass
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:9b338c2b-59b9-49db-b30e-f15cd396e610'
+settings:
+  id: 'block_content:9b338c2b-59b9-49db-b30e-f15cd396e610'
+  label: 'FAQ description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /faq
+    negate: false
+    context_mapping: {  }

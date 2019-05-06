@@ -1,0 +1,6 @@
+uuid: e037bdda-7a65-41e6-aaaa-6b1be5588ec8
+langcode: en
+status: true
+dependencies: {  }
+id: latest_cars_wrapper
+label: Latest-cars-wrapper

@@ -48,3 +48,14 @@
   width: 100%;
   padding: 0 10px;
 }
+@mixin burger-menu-icon-show-more() {
+  z-index: 10;
+  transition: all .3s;
+  cursor: pointer;
+  width: 40px;
+  height: 6px;
+  background-image: url("../images/minus-menu.png");
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

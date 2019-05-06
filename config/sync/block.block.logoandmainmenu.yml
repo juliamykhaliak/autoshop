@@ -11,7 +11,7 @@ dependencies:
 id: logoandmainmenu
 theme: bootstrap_sass
 region: header
-weight: 0
+weight: -19
 provider: null
 plugin: 'block_group:d3b6a364-8939-4901-aca3-fb046b28094c'
 settings:

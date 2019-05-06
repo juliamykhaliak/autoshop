@@ -1,0 +1,53 @@
+uuid: 17c6cb5c-29f9-4dbe-a6be-3dd7d0ebc5a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.paragraphs_multple
+    - field.field.block_content.paragraphs_multple.body
+    - field.field.block_content.paragraphs_multple.field_paragraphs
+  module:
+    - entity_reference_revisions
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_body_wrapper:
+      children:
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: description-service
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Body-wrapper
+      region: content
+id: block_content.paragraphs_multple.default
+targetEntityType: block_content
+bundle: paragraphs_multple
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

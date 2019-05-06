@@ -5,6 +5,7 @@
       $menu.once().before("<div class='js-show-more-button'></div>");
       $('.js-show-more-button').once().on('click', function () {
         $('#block-logoandmainmenu').toggleClass('active-burger-menu');
+        $('.js-show-more-button').toggleClass('cross-icon-button-js');
       });
       $('.view-id-slider_cars .view-content').once().slick({
         infinity: true,

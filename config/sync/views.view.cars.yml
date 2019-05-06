@@ -19,7 +19,6 @@ dependencies:
     - media
     - node
     - paragraphs
-    - slick_views
     - taxonomy
     - user
     - views_fieldsets
@@ -66,7 +65,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 9
           offset: 0
           id: 0
           total_pages: null
@@ -1260,6 +1259,13 @@ display:
       display_extenders: {  }
       path: cars
       exposed_block: true
+      use_more: true
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more_always: false
+      use_more_text: 'next »'
     cache_metadata:
       max-age: -1
       contexts:

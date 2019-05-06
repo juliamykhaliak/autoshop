@@ -12,7 +12,7 @@ dependencies:
 id: visitbloglink
 theme: bootstrap_sass
 region: content
-weight: -10
+weight: -13
 provider: null
 plugin: 'block_content:86b19e37-a1d1-4cf8-9aec-d846db2b59fe'
 settings:

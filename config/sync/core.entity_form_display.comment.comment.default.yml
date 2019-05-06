@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - comment.type.comment
-    - field.field.comment.comment.comment_body
-  module:
-    - text
+    - field.field.comment.comment.field_comment_body
 _core:
   default_config_hash: I0Pa0aQvT_jawlPo9oz4FE3h_ickc55dYKTPl6gILes
 id: comment.comment.default
@@ -17,14 +15,14 @@ content:
   author:
     weight: -2
     region: content
-  comment_body:
-    type: text_textarea
+  field_comment_body:
     weight: 11
-    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: string_textarea
+    region: content
   subject:
     type: string_textfield
     weight: 10

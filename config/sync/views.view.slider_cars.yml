@@ -14,7 +14,6 @@ dependencies:
     - media
     - node
     - paragraphs
-    - slick_views
     - user
     - views_fieldsets
 id: slider_cars
@@ -63,50 +62,11 @@ display:
           items_per_page: null
           offset: 0
       style:
-        type: slick
+        type: default
         options:
-          vanilla: true
-          optionset: default
-          skin: ''
-          layout: ''
-          caption:
-            field_photo: '0'
-            fieldset: '0'
-            title: '0'
-            fieldset_1: '0'
-            field_year: '0'
-            field_fu: '0'
-            field_body: '0'
-            field_milleage: '0'
-            field_price: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_caption: ''
-          grid_header: ''
-          grid: 3
-          grid_medium: 3
-          grid_small: 3
-          visible_items: 3
-          preserve_keys: false
-          image: ''
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: ''
-          override: true
-          overridables:
-            autoplay: autoplay
-            draggable: draggable
-            infinite: infinite
-            arrows: '0'
-            dots: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: block_1
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       fields:

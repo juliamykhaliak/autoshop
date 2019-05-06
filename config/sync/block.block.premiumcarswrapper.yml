@@ -1,0 +1,28 @@
+uuid: 05d1d0ec-07a5-4f35-9a34-81c0c9d84404
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.premium_cars_wrapper
+  module:
+    - blockgroup
+    - system
+  theme:
+    - bootstrap_sass
+id: premiumcarswrapper
+theme: bootstrap_sass
+region: content
+weight: -17
+provider: null
+plugin: 'block_group:c9c3fe65-1ec8-4bce-adce-f37772dba1cf'
+settings:
+  id: 'block_group:c9c3fe65-1ec8-4bce-adce-f37772dba1cf'
+  label: 'Premium cars wrapper'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
