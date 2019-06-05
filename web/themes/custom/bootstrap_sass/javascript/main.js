@@ -9,7 +9,9 @@
       });
       $('.view-id-slider_cars .view-content').once().slick({
         infinite: true,
-        speed: 300,
+        speed: 4000,
+        autoplay: true,
+        autoplaySpeed: 1000,
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows : false,
