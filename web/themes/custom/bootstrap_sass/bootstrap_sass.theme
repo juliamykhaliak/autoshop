@@ -10,9 +10,3 @@
 function bootstrap_sass_theme_suggestions_fontawesomeicon_alter(array &$suggestions, array $variables) {
     $suggestions[] = 'font_awesome';
 }
-
-function bootstrap_sass_preprocess_field(&$variables) {
-  if ($variables['submitted']) {
-    $variables['submitted'] = t('!datetime !username', array('!username' => $variables['name'], '!datetime' => $variables['date']));
-  }
-}
